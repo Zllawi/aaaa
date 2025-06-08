@@ -1,0 +1,94 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #e9ecef;
+}
+
+.profile-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 100px; /* Add margin to make space for the overlapping image */
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* This makes the image perfectly circular */
+    object-fit: cover;
+    border: 7px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -110px; /* Adjust this value to position the image correctly */
+    position: relative;
+    z-index: 1;
+}
+
+.card-title {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #6c757d !important;
+}
+
+hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    color: #495057;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+
+.instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.tiktok {
+    background-color: #010101;
+}
+
+#result {
+    font-weight: bold;
+    color: #2c3e50;
+}
